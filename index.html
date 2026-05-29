@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APEX F1 — Machine Unleashed</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CUSTOM CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAVIGATION -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">APEX<span>.</span>F1</a>
+  <ul class="nav-links">
+    <li><a href="#cars">Cars</a></li>
+    <li><a href="#circuits">Circuits</a></li>
+    <li><a href="#drivers">Drivers</a></li>
+    <li><a href="#tech">Technology</a></li>
+  </ul>
+  <button class="nav-cta">Enter Paddock</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <video id="heroVideo" autoplay muted loop playsinline>
+  <source src="hero video.mp4" type="video/mp4">
+</video>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="hero-badge-dot"></span>
+      2025 Formula One Season
+    </div>
+    <h1 class="hero-headline">MACHINE<br><em>UNLEASHED</em></h1>
+    <div class="hero-meta">
+      <div class="meta-stat">
+        <span class="val">1,000+</span>
+        <span class="lbl">Horsepower</span>
+      </div>
+      <div class="meta-divider"></div>
+      <div class="meta-stat">
+        <span class="val">370</span>
+        <span class="lbl">km/h Top Speed</span>
+      </div>
+      <div class="meta-divider"></div>
+      <div class="meta-stat">
+        <span class="val">1.8s</span>
+        <span class="lbl">0–100 km/h</span>
+      </div>
+      <div class="meta-divider"></div>
+      <div class="meta-stat">
+        <span class="val">24</span>
+        <span class="lbl">Race Weekends</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-indicator">
+    <span class="scroll-label">Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-bar">
+  <div class="marquee-inner" id="marqueeInner"></div>
+</div>
+
+<!-- CARS -->
+<section class="section cars-section" id="cars">
+  <div class="section-header">
+    <div>
+      <div class="section-eyebrow">2025 Constructor Grid</div>
+      <div class="section-title">THE<br>MACHINES</div>
+    </div>
+    <p class="section-sub">Ten constructors. Twenty drivers. The most advanced racing machines ever built at the absolute limit of technology.</p>
+  </div>
+  <div class="cars-grid" id="carsGrid"></div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-block">
+      <div class="stat-number">340<span>km/h</span></div>
+      <div class="stat-desc">Avg corner exit speed</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-number">6<span>g</span></div>
+      <div class="stat-desc">Lateral cornering force</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-number">798<span>°C</span></div>
+      <div class="stat-desc">Brake disc temperature</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-number">2,300</div>
+      <div class="stat-desc">Parts per car</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-number">100<span>kg</span></div>
+      <div class="stat-desc">Fuel load per race</div>
+    </div>
+  </div>
+</div>
+
+<!-- TECHNOLOGY -->
+<section class="section tech-section" id="tech">
+  <div class="section-eyebrow">Engineering Excellence</div>
+  <div class="section-title">BUILT AT<br>THE LIMIT</div>
+  <div class="tech-grid">
+    <div class="tech-block">
+      <span class="tech-icon">⚡</span>
+      <div class="tech-title">Hybrid Power Unit</div>
+      <p class="tech-text">The 1.6L V6 turbocharged ICE paired with two MGU systems delivers over 1,000hp — with 20% sourced from energy recovery alone. Thermal efficiency exceeds 52%.</p>
+      <div class="progress-bars">
+        <div class="prog-row">
+          <span class="prog-label">ICE Output</span>
+          <div class="prog-track"><div class="prog-fill" data-width="82"></div></div>
+          <span class="prog-value">820hp</span>
+        </div>
+        <div class="prog-row">
+          <span class="prog-label">ERS Output</span>
+          <div class="prog-track"><div class="prog-fill" data-width="16"></div></div>
+          <span class="prog-value">163hp</span>
+        </div>
+        <div class="prog-row">
+          <span class="prog-label">Efficiency</span>
+          <div class="prog-track"><div class="prog-fill" data-width="52"></div></div>
+          <span class="prog-value">52%</span>
+        </div>
+      </div>
+    </div>
+    <div class="tech-block">
+      <span class="tech-icon">🌊</span>
+      <div class="tech-title">Aerodynamic Downforce</div>
+      <p class="tech-text">Ground effect floors and precisely sculpted bodywork generate over 1,500kg of downforce at 250km/h — more than the car's own weight pressing it to the circuit.</p>
+      <div class="progress-bars">
+        <div class="prog-row">
+          <span class="prog-label">Downforce</span>
+          <div class="prog-track"><div class="prog-fill" data-width="92"></div></div>
+          <span class="prog-value">1500kg</span>
+        </div>
+        <div class="prog-row">
+          <span class="prog-label">Drag coeff</span>
+          <div class="prog-track"><div class="prog-fill" data-width="35"></div></div>
+          <span class="prog-value">0.7 Cd</span>
+        </div>
+        <div class="prog-row">
+          <span class="prog-label">DRS gain</span>
+          <div class="prog-track"><div class="prog-fill" data-width="45"></div></div>
+          <span class="prog-value">~12 km/h</span>
+        </div>
+      </div>
+    </div>
+    <div class="tech-block span-2">
+      <div>
+        <span class="tech-icon">🏎</span>
+        <div class="tech-title">Carbon Fibre Monocoque</div>
+        <p class="tech-text">The survival cell endures 25g frontal impacts and is engineered to weigh under 40kg — yet withstand the equivalent force of a building collapse. Every layer of carbon fibre is hand-laid by aerospace technicians at tolerances measured in microns.</p>
+      </div>
+      <div>
+        <span class="tech-icon">🔬</span>
+        <div class="tech-title">CFD & Wind Tunnel</div>
+        <p class="tech-text">Teams log millions of CFD simulation hours annually. Wind tunnels run at 60% scale with airflows up to 50m/s. Every surface, duct, and vane is obsessively optimised — the difference of a tenth of a second over a lap is the difference between a championship and an also-ran.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CIRCUITS -->
+<section class="circuit-section" id="circuits">
+  <div class="section-eyebrow">2025 Race Calendar</div>
+  <div class="section-title">THE<br>CIRCUITS</div>
+  <div class="circuits-grid" id="circuitsGrid"></div>
+</section>
+
+<!-- DRIVERS -->
+<section class="drivers-section" id="drivers">
+  <div class="section-header">
+    <div>
+      <div class="section-eyebrow">Championship Standings</div>
+      <div class="section-title">THE<br>DRIVERS</div>
+    </div>
+    <p class="section-sub">Twenty athletes at the absolute edge of human performance. Reaction times under 100ms. G-forces exceeding 6g through high-speed corners.</p>
+  </div>
+  <div class="drivers-grid" id="driversGrid"></div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo">APEX<span>.</span>F1</div>
+      <p>The definitive digital showcase for Formula One's greatest machines, circuits, and champions.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="#">2025 Season</a></li>
+        <li><a href="#">Car Specifications</a></li>
+        <li><a href="#">Circuit Guide</a></li>
+        <li><a href="#">Driver Profiles</a></li>
+        <li><a href="#">Technology Deep Dive</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Constructors</h4>
+      <ul>
+        <li><a href="#">Red Bull Racing</a></li>
+        <li><a href="#">Scuderia Ferrari</a></li>
+        <li><a href="#">Mercedes-AMG</a></li>
+        <li><a href="#">McLaren F1</a></li>
+        <li><a href="#">Aston Martin</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Apex F1 Showcase — All specifications for reference only</p>
+    <p>Built for speed. Designed for obsessives.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
